@@ -36,10 +36,10 @@
                         PH Dish
                     </a>
                     <ul class="dropdown-menu text-center bg-danger" aria-labelledby="phdish">
-                        <li><a href="#" class="dropdown-item">Chicken</a></li>
                         <li><a href="#" class="dropdown-item">Pork</a></li>
-                        <li><a href="#" class="dropdown-item">Beef</a></li>
                         <li><a href="#" class="dropdown-item">Fish</a></li>
+                        <li><a href="chickendish.html" class="dropdown-item">Chicken</a></li>
+                        <li><a href="#" class="dropdown-item">Vegetables</a></li>
                     </ul>
                 </div>
                    </li>
@@ -58,33 +58,79 @@
     </header> <!-- End of Navigation -->
     
     <article>
-      
-       <div class="row m-auto" style="background-color: rgb(255, 213, 135);">
-        <h2 class="text-center p-2">WHAT TO COOK FOR TODAY</h2>
-        <hr>
-          <div class="col-4 p-5">
-            <a href="adobongmanok.html">
-              <img src="media/adobo_manok.jpg" alt="Adobo" name="Adobo" class="dishmenu" id="adobong_manok">
-              <h3 class="text-center pt-2 dishheading">Adobong Manok</h3>
-            </a>
-          </div>
+        <div style="background-color: rgb(255, 213, 135);">
+          <div class="row m-auto divcarousel">
+              <h2 class="text-center p-2">WHAT TO COOK FOR TODAY</h2>
+              <hr>
+        
+              <div id="carouselslide" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="3000">
+                    <img src="media/chickenafritada.jpg" class="d-block w-100" alt="Chicken Afritada">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h1 class="btn btn-warning carouseltext">Chicken Afritada</h1>
+                    </div>
+                  </div>
 
-          <div class="col-4 p-5">
-            <a href="sinigangnababoy.html">
-              <img src="media/sinigang.jpg" alt="Pork Sinigang" name="Pork Sinigang" class="dishmenu" id="pork_sinigang">
-              <h3 class="text-center pt-2 dishheading">Pork Sinigang</h3>
-            </a>
-          </div>
+                  <div class="carousel-item" data-bs-interval="3000">
+                    <img src="media/sisig.jpg" class="d-block w-100" alt="Pork Sisig">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h1 class="btn btn-warning carouseltext">Pork Sisig</h1>
+                    </div>
+                  </div>
 
-          <div class="col-4 p-5">
-            <a href="sarciadongtilapia.html">
-              <img src="media/sarciadong_tilapia.jpg" alt="Sarciadong Tilapia" name="Sarciadong Tilapia" class="dishmenu" id="sarciadong_tilapia">
-              <h3 class="text-center pt-2 dishheading">Sarciadong Tilapia</h3>
-            </a>
-          </div>
-       </div>
+                  <div class="carousel-item" data-bs-interval="3000">
+                    <img src="media/tinola.jpg" class="d-block w-100" alt="Tinola">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h1 class="btn btn-warning carouseltext">Tinola</h1>
+                    </div>
+                  </div>
+
+                  <div class="carousel-item">
+                    <img src="media/pinakbet.jpg" class="d-block w-100" alt="Pinakbet">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h1 class="btn btn-warning carouseltext">Pinakbet</h1>
+                    </div>
+                  </div>
+
+                </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselslidel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon bg-warning" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselslide" data-bs-slide="next">
+                    <span class="carousel-control-next-icon bg-warning" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="row m-auto">
+                <div class="col-4 pt-4">
+                  <a href="adobongmanok.html">
+                    <img src="media/adobo_manok.jpg" alt="Adobo" name="Adobo" class="dishmenu" id="adobong_manok">
+                    <h3 class="text-center pt-2 dishheading">Adobong Manok</h3>
+                  </a>
+                </div>
+
+                <div class="col-4 pt-4">
+                  <a href="sinigangnababoy.html">
+                    <img src="media/sinigang.jpg" alt="Pork Sinigang" name="Pork Sinigang" class="dishmenu" id="pork_sinigang">
+                    <h3 class="text-center pt-2 dishheading">Pork Sinigang</h3>
+                  </a>
+                </div>
+
+                <div class="col-4 pt-4">
+                  <a href="sarciadongtilapia.html">
+                    <img src="media/sarciadong_tilapia.jpg" alt="Sarciadong Tilapia" name="Sarciadong Tilapia" class="dishmenu" id="sarciadong_tilapia">
+                    <h3 class="text-center pt-2 dishheading">Sarciadong Tilapia</h3>
+                  </a>
+                </div>
+              </div>
+         </div>
     </article>
 
+    <!-- Footer -->
     <footer class="bg-warning p-4">
         <div class="text-center">
             <h4>&copy; 2023 PH Best Recipes</h4>

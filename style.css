@@ -17,8 +17,6 @@
     }
   }
 
-
-
 /* Navigation Menu */
 .divmenu {
     justify-content: center;
@@ -27,7 +25,7 @@
 /* PH Best Recipes */
 .title {
     font-size: 40px;
-    color: red;
+    color: brown;
     font-weight: bolder;
 }
 
@@ -58,12 +56,12 @@ a {
 
 /*Image class*/
 .dishmenu {
-    height: 280px;
+    height: 311px;
     border-radius: 20px;
 }
 
 .dishheading {
-    color: black;
+    color: brown;
 }
 
 .dishheading:hover {
@@ -78,4 +76,9 @@ a {
 
 .ingredients {
     font-size: 25px;
+}
+
+.carouseltext {
+    font-size: 50px;
+    color: brown;
 }
