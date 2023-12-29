@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Media Query */
+@media only screen and (max-width: 392px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 100%;
+    }
+    .dishmenu {
+        max-width: 100%;
+        height: auto !important;
+    }
+  }
+
+
+
+/* Navigation Menu */
+.divmenu {
+    justify-content: center;
+}
+
+/* PH Best Recipes */
+.title {
+    font-size: 40px;
+    color: red;
+    font-weight: bolder;
+}
+
+/* ul class .menu */
+.menu li a {
+    color: white;
+    font-size: 30px;
+}
+
+.menu li {
+    padding: 0px 20px 0px 20px;
+}
+
+.menu li a:hover{
+    color: red;
+}
+
+a {
+    text-decoration: none;
+}
+
+.div_saverecipe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Image class*/
+.dishmenu {
+    height: 280px;
+    border-radius: 20px;
+}
+
+.dishheading {
+    color: black;
+}
+
+.dishheading:hover {
+    text-decoration: underline;
+}
+
+/* Dish name on landing page */
+.dishname {
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.ingredients {
+    font-size: 25px;
+}
