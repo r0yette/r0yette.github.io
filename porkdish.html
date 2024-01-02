@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pork</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Icon CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+
+              <!-- Title -->
+              <a class="navbar-brand title text-warning" href="index.html">PH Best Recipes</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <!-- Navigation Menu -->
+              <div class="collapse navbar-collapse divmenu" id="navbar">
+                <ul class="navbar-nav menu">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                  </li>
+
+                  <li class="nav-item dropdown">
+                    <div>
+                    <a href="#" class="nav-link dropdown-toggle" id="recipe" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Recipe
+                    </a>
+                    <ul class="dropdown-menu text-center recipe" aria-labelledby="recipe">
+                      <li><a href="porkdish.html" class="dropdown-item">Pork</a></li>
+                      <li><a href="fishdish.html" class="dropdown-item">Fish</a></li>
+                      <li><a href="chickendish.html" class="dropdown-item">Chicken</a></li>
+                      <li><a href="vegetabledish.html" class="dropdown-item">Vegetables</a></li>
+                    </ul>
+                </div>
+                   </li>
+
+                   <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                  </li>
+                </ul>
+
+                <form action="" class="d-flex">
+                  <input type="search" class="form-control me-2" placeholder="Search" name="search" id="search">
+                  <button class="btn btn-outline-warning" type="submit">Search</button>
+              </form>
+              </div>
+            </div>
+          </nav>
+    </header> <!-- End of Navigation -->
+    
+    <article>
+      <div class="p-4" style="background-color: rgb(255, 213, 135);">
+          <div class="py-5 text-center text-warning" style="background-color: brown; border-radius: 50px;">
+            <h1>Pork Recipes</h1>
+            <h3>This Page Display the collection of PH Best Recipes Pork Recipes</h3>
+          </div>
+
+            <div class="py-4 pork border-bottom border-3 border-danger ">    
+              <a href="porkadobo.html">
+                <h3 class="text-center pt-2 dishheading">Pork Adobo</h3>
+                <img src="media/porkadobo.jpg" alt="Pork Adobo" name="Pork Adobo" class="porkdish">  
+              </a>
+            </div>
+
+            <div class="py-4 pork border-bottom border-3 border-danger">    
+                <a href="porkbinagoongan.html">
+                  <h3 class="text-center pt-2 dishheading">Pork Binagoongan</h3>
+                  <img src="media/porkbinagoongan.jpg" alt="Pork Binagoongan" name="Pork Binagoongan" class="porkdish">
+                </a>
+            </div>
+
+            <div class="py-4 pork border-bottom border-3 border-danger">    
+                <a href="porkmenudo.html">
+                  <h3 class="text-center pt-2 dishheading">Pork Menudo</h3>   
+                  <img src="media/porkmenudo.jpg" alt="Pork Menudo" name="Pork Menudo" class="porkdish">
+                </a>
+            </div>
+
+            <div class="py-4 pork border-bottom border-3 border-danger">    
+                <a href="porksisig.html">
+                  <h3 class="text-center pt-2 dishheading">Pork Sisig</h3> 
+                  <img src="media/sisig.jpg" alt="Pork Sisig" name="Pork Sisig" class="porkdish">  
+                </a>
+            </div>
+
+            <div class="py-4 pork">    
+                <a href="sinigangnababoy.html">
+                  <h3 class="text-center pt-2 dishheading">Pork Sinigang</h3>
+                  <img src="media/sinigang.jpg" alt="Pork Sinigang" name="Pork Sinigang" class="porkdish">   
+                </a>
+            </div>
+      </div>
+    </article>
+
+    <footer class="p-3">
+        <div class="text-center mt-3 text-white">
+            <h4>&copy; 2023 PH Best Recipes</h4>
+        </div>
+    </footer>
+
+    <!-- This is Javascript Plugin -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+    </script>
+</body>
+</html>

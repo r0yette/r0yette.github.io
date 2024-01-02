@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Icon CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+
+              <!-- Title -->
+              <a class="navbar-brand title text-warning" href="index.html">PH Best Recipes</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <!-- Navigation Menu -->
+              <div class="collapse navbar-collapse divmenu" id="navbar">
+                <ul class="navbar-nav menu">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                  </li>
+
+                  <li class="nav-item dropdown">
+                    <div>
+                    <a href="#" class="nav-link dropdown-toggle" id="recipe" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Recipe
+                    </a>
+                    <ul class="dropdown-menu text-center recipe" aria-labelledby="recipe">
+                      <li><a href="porkdish.html" class="dropdown-item">Pork</a></li>
+                      <li><a href="fishdish.html" class="dropdown-item">Fish</a></li>
+                      <li><a href="chickendish.html" class="dropdown-item">Chicken</a></li>
+                      <li><a href="vegetabledish.html" class="dropdown-item">Vegetables</a></li>
+                    </ul>
+                </div>
+                   </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                  </li>
+                </ul>
+
+                <form action="" class="d-flex">
+                  <input type="search" class="form-control me-2" placeholder="Search" name="search" id="search">
+                  <button class="btn btn-outline-warning" type="submit">Search</button>
+              </form>
+              </div>
+            </div>
+          </nav>
+    </header> <!-- End of Navigation -->
+    
+    <article>
+      <div class="p-4 d-flex justify-content-center divcontact" style="background-color: rgb(255, 213, 135);">
+        <div class="card card-registration p-5 h-100 w-70 text-white">
+                <div class="row">
+                    <h1 class="text-center border-bottom border-white pb-5 fw-bolder ">Contact Us</h1>
+                    <div class="col-6 pt-5">
+                        <img src="media/logo.png" alt="" class="img-fluid w-75"> 
+                        
+                        <div class="row pt-5">
+                            <div class="col-7">
+                                <a href="mailto:phbestrecipes@gmail.com">
+                                    <h1 class="bi bi-envelope text-white"> phbestrecipes@gmail.com</h1>
+                                </a>
+                            </div>
+
+                            <div class="col-5">
+                                <h1 class="bi bi-telephone-fill text-white"> +639095678910</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 pt-5">
+                        <form action="">
+                            <div class="row">
+                                <div class="col-12">
+                                    <label for="message" class="form-label"><h4>Message</h4></label>
+                                    <textarea name="message" id="message" cols="30" rows="5" class="form-control fs-5"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-6 pt-3">
+                                    <label for="fname" class="form-label"><h4>First Name</h4></label>
+                                    <input type="text" name="fname" id="fname" class="form-control fs-5">
+                                </div>
+
+                                <div class="col-6 pt-3">
+                                    <label for="lname" class="form-label"><h4>Last Name</h4></label>
+                                    <input type="text" name="lname" id="lname" class="form-control fs-5">
+                                </div>
+                            </div>
+
+                            <div class="pt-3">
+                                <label for="email" class="form-label"><h4>Email</h4></label>
+                                <input type="email" name="email" id="email" class="form-control fs-5" required>
+                            </div>
+
+                            <div>
+                                <button class="btn btn-warning mt-3 px-5 me-3" type="submit"><h4>Submit</h4></button>
+                                <button class="btn btn-secondary mt-3 px-5" type="reset"><h4>Clear</h4></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+        </div>
+      </div>
+    </article>
+
+    <footer class="p-3">
+        <div class="text-center mt-3 text-white">
+            <h4>&copy; 2023 PH Best Recipes</h4>
+        </div>
+    </footer>
+
+    <!-- This is Javascript Plugin -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+    </script>
+</body>
+</html>

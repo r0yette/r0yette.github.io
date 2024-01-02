@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chicken Afritada</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Icon CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+
+              <!-- Title -->
+              <a class="navbar-brand title text-warning" href="index.html">PH Best Recipes</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <!-- Navigation Menu -->
+              <div class="collapse navbar-collapse divmenu" id="navbar">
+                <ul class="navbar-nav menu">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                  </li>
+
+                  <li class="nav-item dropdown">
+                    <div>
+                    <a href="#" class="nav-link dropdown-toggle" id="recipe" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Recipe
+                    </a>
+                    <ul class="dropdown-menu text-center recipe" aria-labelledby="recipe">
+                      <li><a href="porkdish.html" class="dropdown-item">Pork</a></li>
+                      <li><a href="fishdish.html" class="dropdown-item">Fish</a></li>
+                      <li><a href="chickendish.html" class="dropdown-item">Chicken</a></li>
+                      <li><a href="vegetabledish.html" class="dropdown-item">Vegetables</a></li>
+                    </ul>
+                </div>
+                   </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                  </li>
+                </ul>
+
+                <form action="" class="d-flex">
+                  <input type="search" class="form-control me-2" placeholder="Search" name="search" id="search">
+                  <button class="btn btn-outline-warning" type="submit">Search</button>
+              </form>
+              </div>
+            </div>
+          </nav>
+    </header> <!-- End of Navigation -->
+    
+    <article>
+        <div style="background-color: rgb(255, 213, 135);">
+            <div class="row m-auto">
+                <div class="col-6 pt-4">
+                  <img src="media/chickenafritada.jpg" alt="Chicken Afritada" name="Chicken Afritada" class="dishmenu" id="chickenafritada" style=" border-radius: 20px; height: 480px;">
+                </div>
+
+                <div class="col-6 pt-5 cookingtimeandprep">
+                        <img src="media/logo.png" alt="Logo" style="height: 200px;"  class="logo">
+                        <h1 class="dishname">Chicken Afitada</h1>
+                        <i>
+                          <h4 class="text-center">This is a recipe for Filipino Afritadang Manok.</h4>
+                        </i>
+                        <h4>Prep: 5 minutes</h4>
+                        <h4>Cooking: 45 minutes</h4>
+                        <h4>Total: 50 minutes</h4>
+
+                </div>
+            </div>
+            <hr>
+            <div class="row m-auto">
+                    <div class="col-6">
+                        <h1 class="fw-bolder">Ingredients</h1>
+                        <ul class="ingredients">
+                            <li>1 1/2 lbs. Chicken.</li>
+                            <li>2 piece potato.</li>
+                            <li>1 piece carrot .</li>
+                            <li>8 oz. tomato sauce.</li>
+                            <li>3 pieces hotdog.</li>
+                            <li>1/2 cup green peas.</li>
+                            <li>3 pieces laurel leaves.</li>
+                            <li>1 piece red onion.</li>
+                            <li>2 teaspoons garlic.</li>
+                            <li>3 cups chicken broth.</li>
+                            <li>1/2 teaspoon sugar.</li>
+                            <li>3 tablespoons cooking oil.</li>
+                            <li>Salt and ground black pepper to taste.</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6">
+                        <h1 class="fw-bolder">How to Cook Chicken Afritada</h1>
+                        <ul class="ingredients">
+                            <li>Heat the oil in a cooking pot. Saute onion and garlic until the onion softens.</li>
+                            <li>Add chicken. Cook for 30 seconds. Turn it over and cook the other side for another 30 seconds.</li>
+                            <li>Pour tomato sauce and chicken broth. Cover. Let boil.</li>
+                            <li>Add dried bay leaves. Cover the cooking pot. Continue to cook in medium heat for 30 minutes.</li>
+                            <li>Add hotdogs and carrot. Cook for 3 minutes.</li>
+                            <li>Add potato. Cover the pot and cook for 8 minutes.</li>
+                            <li>Add green peas. Cook for 2 minutes.</li>
+                            <li>Season with salt and ground black pepper</li>
+                            <li>Serve!</li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </article>
+
+    <footer class="p-3">
+        <div class="text-center mt-3 text-white">
+            <h4>&copy; 2023 PH Best Recipes</h4>
+        </div>
+    </footer>
+
+    <!-- This is Javascript Plugin -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+    </script>
+</body>
+</html>

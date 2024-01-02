@@ -14,12 +14,12 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-warning">
+        <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
 
               <!-- Title -->
-              <a class="navbar-brand title" href="index.html">PH Best Recipes</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <a class="navbar-brand title text-warning" href="index.html">PH Best Recipes</a>
+              <button class="navbar-toggler toggleicon" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
 
@@ -31,70 +31,89 @@
                   </li>
 
                   <li class="nav-item dropdown">
-                    <div>
-                    <a href="#" class="nav-link dropdown-toggle" id="phdish" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        PH Dish
-                    </a>
-                    <ul class="dropdown-menu text-center bg-danger" aria-labelledby="phdish">
-                        <li><a href="#" class="dropdown-item">Pork</a></li>
-                        <li><a href="#" class="dropdown-item">Fish</a></li>
-                        <li><a href="chickendish.html" class="dropdown-item">Chicken</a></li>
-                        <li><a href="#" class="dropdown-item">Vegetables</a></li>
-                    </ul>
-                </div>
+                      <div>
+                        <a href="#" class="nav-link dropdown-toggle" id="recipe" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Recipe
+                        </a>
+                        <ul class="dropdown-menu text-center recipe" aria-labelledby="recipe">
+                          <li><a href="porkdish.html" class="dropdown-item">Pork</a></li>
+                          <li><a href="fishdish.html" class="dropdown-item">Fish</a></li>
+                          <li><a href="chickendish.html" class="dropdown-item">Chicken</a></li>
+                          <li><a href="vegetabledish.html" class="dropdown-item">Vegetables</a></li>
+                        </ul>
+                      </div>
                    </li>
 
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="contact.html">Contact</a>
                   </li>
 
                   <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="about.html">About</a>
                   </li>
                 </ul>
+                <form action="" class="d-flex">
+                  <input type="search" class="form-control me-2" placeholder="Search" name="search" id="search">
+                  <button class="btn btn-outline-warning" type="submit">Search</button>
+                </form>
               </div>
             </div>
           </nav>
     </header> <!-- End of Navigation -->
     
     <article>
-        <div style="background-color: rgb(255, 213, 135);">
+        <div style="background-color: rgb(255, 213, 135);" class="pt-4">
           <div class="row m-auto divcarousel">
-              <h2 class="text-center p-2">WHAT TO COOK FOR TODAY</h2>
-              <hr>
-        
+
+              <!-- Carousel Slide -->
               <div id="carouselslide" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active" data-bs-interval="3000">
-                    <img src="media/chickenafritada.jpg" class="d-block w-100" alt="Chicken Afritada">
+                    <a href="sweetandsourfish.html">
+                      <img src="media/sweetnsourfishcarousel.jpg" class="d-block w-100 carouselimage" alt="Sweet and Sour Fish">
+                    </a>
                     <div class="carousel-caption d-none d-md-block">
-                      <h1 class="btn btn-warning carouseltext">Chicken Afritada</h1>
+                     <a href="sweetandsourfish.html">
+                      <h1 class="btn btn-warning carouseltext">Sweet and Sour Fish</h1>
+                    </a>
                     </div>
                   </div>
 
                   <div class="carousel-item" data-bs-interval="3000">
-                    <img src="media/sisig.jpg" class="d-block w-100" alt="Pork Sisig">
+                    <a href="porksisig.html">
+                      <img src="media/porksisigcarousel.jpg" class="d-block w-100 carouselimage" alt="Pork Sisig">
+                    </a>
                     <div class="carousel-caption d-none d-md-block">
-                      <h1 class="btn btn-warning carouseltext">Pork Sisig</h1>
+                      <a href="porksisig.html">
+                        <h1 class="btn btn-warning carouseltext">Pork Sisig</h1>
+                      </a>
                     </div>
                   </div>
 
                   <div class="carousel-item" data-bs-interval="3000">
-                    <img src="media/tinola.jpg" class="d-block w-100" alt="Tinola">
+                    <a href="tinola.html">
+                      <img src="media/tinolacarousel.jpg" class="d-block w-100 carouselimage" alt="Tinola">
+                    </a>
                     <div class="carousel-caption d-none d-md-block">
-                      <h1 class="btn btn-warning carouseltext">Tinola</h1>
+                      <a href="tinola.html">
+                        <h1 class="btn btn-warning carouseltext">Tinola</h1>
+                      </a>
                     </div>
                   </div>
 
                   <div class="carousel-item">
-                    <img src="media/pinakbet.jpg" class="d-block w-100" alt="Pinakbet">
+                    <a href="pinakbet.html">
+                      <img src="media/pinakbetcarousel.jpg" class="d-block w-100 carouselimage" alt="Pinakbet">
+                    </a>
                     <div class="carousel-caption d-none d-md-block">
-                      <h1 class="btn btn-warning carouseltext">Pinakbet</h1>
+                      <a href="pinakbet.html">
+                        <h1 class="btn btn-warning carouseltext">Pinakbet</h1>
+                      </a>
                     </div>
                   </div>
 
                 </div>
-                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselslidel" data-bs-slide="prev">
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselslide" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon bg-warning" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                   </button>
@@ -104,12 +123,15 @@
                   </button>
                 </div>
               </div>
-
+              <!-- Carousel Slide End -->
+              <h2 class="text-center p-3 whattocook">WHAT TO COOK FOR TODAY</h2>
+              <hr>
+              
               <div class="row m-auto">
                 <div class="col-4 pt-4">
                   <a href="adobongmanok.html">
                     <img src="media/adobo_manok.jpg" alt="Adobo" name="Adobo" class="dishmenu" id="adobong_manok">
-                    <h3 class="text-center pt-2 dishheading">Adobong Manok</h3>
+                    <h3 class="text-center pt-2 dishheading">Chicken Adobo</h3>
                   </a>
                 </div>
 
@@ -127,12 +149,35 @@
                   </a>
                 </div>
               </div>
+
+              <div class="row m-auto">
+                <div class="col-6">
+                  <a href="chopseuy.html">
+                    <img src="media/chopseuy.jpg" alt="Chop Seuy" name="Chop Seuy" class="dishmenu" id="chopseuy">
+                    <h3 class="text-center pt-2 dishheading">Chop Seuy</h3>
+                  </a>
+                </div>
+
+                <div class="col-6">
+                  <div class="row">
+                    <div class="col-12">
+                      <a href="sitawkalabasa.html">
+                        <img src="media/sitawkalabasa.jpg" alt="Ginisang Sitaw at Kalabasa" name="Ginisang Sitaw at Kalabasa" class="dishmenu" id="sitawkalabasa">
+                        <h3 class="text-center pt-2 dishheading">Ginisang Sitaw at Kalabasa</h3>
+                      </a>
+                    </div>
+                  </div>
+
+                </div>
+
+  
+              </div>
          </div>
     </article>
 
     <!-- Footer -->
-    <footer class="bg-warning p-4">
-        <div class="text-center">
+    <footer class="p-3">
+        <div class="text-center mt-3 text-white">
             <h4>&copy; 2023 PH Best Recipes</h4>
         </div>
     </footer>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PH Best Recipes</title>
+    <title>Chicken</title>
     <!-- Bootstrap Core CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -14,11 +14,11 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-warning">
+        <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
 
               <!-- Title -->
-              <a class="navbar-brand title" href="index.html">PH Best Recipes</a>
+              <a class="navbar-brand title text-warning" href="index.html">PH Best Recipes</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -32,14 +32,14 @@
 
                   <li class="nav-item dropdown">
                     <div>
-                    <a href="#" class="nav-link dropdown-toggle" id="phdish" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        PH Dish
+                    <a href="#" class="nav-link dropdown-toggle" id="recipe" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Recipe
                     </a>
-                    <ul class="dropdown-menu text-center bg-danger" aria-labelledby="phdish">
-                      <li><a href="#" class="dropdown-item">Pork</a></li>
-                      <li><a href="#" class="dropdown-item">Fish</a></li>
+                    <ul class="dropdown-menu text-center recipe" aria-labelledby="recipe">
+                      <li><a href="porkdish.html" class="dropdown-item">Pork</a></li>
+                      <li><a href="fishdish.html" class="dropdown-item">Fish</a></li>
                       <li><a href="chickendish.html" class="dropdown-item">Chicken</a></li>
-                      <li><a href="#" class="dropdown-item">Vegetables</a></li>
+                      <li><a href="vegetabledish.html" class="dropdown-item">Vegetables</a></li>
                     </ul>
                 </div>
                    </li>
@@ -52,60 +52,62 @@
                     <a class="nav-link" href="#">About</a>
                   </li>
                 </ul>
+
+                <form action="" class="d-flex">
+                  <input type="search" class="form-control me-2" placeholder="Search" name="search" id="search">
+                  <button class="btn btn-outline-warning" type="submit">Search</button>
+              </form>
               </div>
             </div>
           </nav>
     </header> <!-- End of Navigation -->
     
     <article>
-        <div style="background-color: rgb(255, 213, 135);">
-            <div class="row m-auto">
-                <div class="col-6 p-5">
-                    <img src="media/adobo_manok.jpg" alt="Adobong Manok" name="Adobong Manok" style=" border-radius: 20px; height: 480px;" class="dishmenu">
-                </div>
+      <div class="p-4" style="background-color: rgb(255, 213, 135);">
+          <div class="py-5 text-center text-warning" style="background-color: brown; border-radius: 50px;">
+            <h1>Chicken Recipes</h1>
+            <h3>This Page Display the collection of PH Best Recipes Chicken Recipes</h3>
+          </div>
 
-                <div class="col-6 p-5 div_saverecipe">
-                        <img src="media/logo.png" alt="Logo" style="height: 200px;">
-                        <h1 class="dishname">Adobong Manok</h1>
-                        <a href=""><b class="bi bi-bookmark-plus text-white btn btn-danger" style="font-size: 40px;"> Save Recipe</b></a>
-                </div>
+            <div class="py-4 chicken border-bottom border-3 border-danger">    
+              <a href="adobongmanok.html">
+                <h3 class="text-center pt-2 dishheading">Adobong Manok</h3>  
+                <img src="media/adobo_manok.jpg" alt="Adobo" name="Adobo" class="chickendish"> 
+              </a>
             </div>
-            <hr>
-            <div class="row m-auto">
-                    <div class="col-6">
-                        <h1>Ingredients</h1>
-                        <ul class="ingredients">
-                            <li>2 lbs chicken.</li>
-                            <li>3 pieces laurel leaves.</li>
-                            <li>6 tablespoons soy sauce.</li>
-                            <li>4 tablespoons white vinegar.</li>
-                            <li>5 cloves of garlic.</li>
-                            <li>1 1/2 cups water.</li>
-                            <li>3 tablespoons cooking oil.</li>
-                            <li>1 teaspoon sugar.</li>
-                            <li>1/4 teaspoon salt</li>
-                            <li>1 teaspoon whole peppercorn</li>
-                        </ul>
-                    </div>
 
-                    <div class="col-6">
-                        <h1>How to Cook Chicken Adobo</h1>
-                        <ul class="ingredients">
-                            <li>Combine chicken, soy sauce, and garlic in a large bowl. Mix well. Marinate the chicken for at least 1 hour. Note: the longer the time, the better.</li>
-                            <li>Heat a cooking pot. Pour cooking oil.</li>
-                            <li>When the oil is hot enough, pan-fry the marinated chicken for 2 minutes per side.</li>
-                            <li>Pour-in the remaining marinade, including garlic. Add water. Bring to a boil.</li>
-                            <li>Add dried laurel leaves and whole peppercorn. Simmer for 30 minutes or until the chicken gets tender.</li>
-                            <li>Add vinegar. Stir and cook for 10 minutes.</li>
-                            <li>Put-in the sugar, and salt. Stir and turn the heat off.Serve hot. Share and Enjoy!</li>
-                        </ul>
-                    </div>
-            </div>
-        </div>
+          <div class="py-4 chicken border-bottom border-3 border-danger ">    
+            <a href="tinola.html">
+              <h3 class="text-center pt-2 dishheading">Tinola</h3>
+              <img src="media/tinola.jpg" alt="Tinola" name="Tinola" class="chickendish">
+            </a>
+          </div>
+
+          <div class="py-4 chicken border-bottom border-3 border-danger">    
+            <a href="chickenafritada.html">
+              <h3 class="text-center pt-2 dishheading">Chicken Afritada</h3>
+              <img src="media/chickenafritada.jpg" alt="Chicken Afritada" name="Chicken Afritada" class="chickendish">
+            </a>
+          </div>
+
+          <div class="py-4 chicken border-bottom border-3 border-danger">    
+            <a href="chickencurry.html">
+              <h3 class="text-center pt-2 dishheading">Chicken Curry</h3>
+              <img src="media/chickencurry.jpg" alt="Chicken Curry" name="Chicken Curry" class="chickendish">
+            </a>
+          </div>
+
+          <div class="py-4 chicken">    
+            <a href="chickenasado.html">
+              <h3 class="text-center pt-2 dishheading">Chicken Asado</h3>
+              <img src="media/chickenasado.jpg" alt="Chicken Asado" name="Chicken Asado" class="chickendish">
+            </a>
+          </div>
+      </div>
     </article>
 
-    <footer class="bg-warning p-4">
-        <div class="text-center">
+    <footer class="p-3">
+        <div class="text-center mt-3 text-white">
             <h4>&copy; 2023 PH Best Recipes</h4>
         </div>
     </footer>

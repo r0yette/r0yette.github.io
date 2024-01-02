@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: 'Times New Roman', Times, serif;
 }
 
@@ -11,21 +10,90 @@
     [class*="col-"] {
       width: 100%;
     }
-    .dishmenu {
+    .dishmenu, .chickendish, .porkdish, .fishdish, .vegetabledish {
+        max-width: 100%;
+        height: auto !important;
+    }
+    .logo {
         max-width: 100%;
         height: auto !important;
     }
   }
 
-/* Navigation Menu */
+  @media only screen and (max-width: 576px) {
+    /* Tablets or Large Phones */
+    [class*="col-"] {
+      width: 100%;
+    }
+    .dishmenu, .chickendish, .porkdish, .fishdish, .vegetabledish {
+        max-width: 100%;
+        height: auto !important;
+    }
+  }
+
+  @media only screen and (min-width: 576px) and (max-width: 768px) {
+    /* Tablets or Large Phones */
+    [class*="col-"] {
+      width: 100%;
+    }
+    .dishmenu, .chickendish, .porkdish, .fishdish, .vegetabledish {
+        max-width: 100%;
+        height: auto !important;
+    }
+  }
+
+  @media all and (max-width: 992px) {
+    /* Laptops */
+    [class*="col-"] {
+      width: 100%;
+    }
+    .dishmenu, .chickendish, .porkdish, .fishdish, .vegetabledish {
+        max-width: 100%;
+        height: auto !important;
+        padding: 0;
+    }
+  }
+
+  @media all and (max-width: 1024px) {
+    /* Laptops and Large Screens */
+    [class*="col-"] {
+      width: 100%;
+    }
+    .dishmenu, .chickendish, .porkdish, .fishdish, .vegetabledish {
+        max-width: 100%;
+        width: 100%;
+        height: auto !important;
+        padding-left: 2px;
+    }
+    .carousel-item {
+        padding-left: 2px;
+    }
+  }
+
+  @media all and (min-width: 1025px) {
+    /* Large Screen*/
+    [class*="col-"]
+    .dishmenu, .chickendish, .porkdish, .fishdish, .vegetabledish {
+        max-width: 100%;
+        width: 100%;
+        height: auto !important;
+        padding-left: 2px;
+    }
+    .carousel-item {
+        padding-left: 2px;
+    }
+  
+  }
+
+
+/* Div Navigation Menu */
 .divmenu {
-    justify-content: center;
+    justify-content: space-between;
 }
 
 /* PH Best Recipes */
 .title {
     font-size: 40px;
-    color: brown;
     font-weight: bolder;
 }
 
@@ -35,50 +103,80 @@
     font-size: 30px;
 }
 
+/* ul class menu for Navigation Menu */
 .menu li {
-    padding: 0px 20px 0px 20px;
+    padding: 0px 10px 0px 10px;
 }
 
 .menu li a:hover{
-    color: red;
+    color: orange;
 }
 
 a {
     text-decoration: none;
 }
 
-.div_saverecipe {
+.cookingtimeandprep {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-/*Image class*/
+/*Images class dishmenu*/
 .dishmenu {
     height: 311px;
     border-radius: 20px;
 }
 
-.dishheading {
+.dishheading, .whattocook {
     color: brown;
+    font-weight: bolder;
 }
 
 .dishheading:hover {
     text-decoration: underline;
 }
 
-/* Dish name on landing page */
+/* Dish name on Recipes Pages */
 .dishname {
     font-size: 50px;
     font-weight: bolder;
 }
 
+/*Font size of Ingredients and Instructions how to cook */
 .ingredients {
     font-size: 25px;
 }
 
+/* Text inside the carousel image */
 .carouseltext {
-    font-size: 50px;
+    font-size: 30px;
     color: brown;
 }
+
+/* Recipe Navigation Dropdown Menu*/
+.chicken, .pork, .fish, .vegies {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.carouselimage, .chickendish, .porkdish, .fishdish, .vegetabledish {
+    border-radius: 20px;
+}
+
+footer, header, .recipe {
+    background-color: brown;
+}
+
+/* Input Number arrow romove  */
+input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+         -webkit-appearance: none;
+      }
+
+.card {
+    background-color: brown;
+}
+

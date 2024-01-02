@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PH Best Recipes</title>
+    <title>Sarciadong Tilapia</title>
     <!-- Bootstrap Core CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -14,11 +14,11 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-warning">
+        <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
 
               <!-- Title -->
-              <a class="navbar-brand title" href="index.html">PH Best Recipes</a>
+              <a class="navbar-brand title text-warning" href="index.html">PH Best Recipes</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -32,26 +32,31 @@
 
                   <li class="nav-item dropdown">
                     <div>
-                    <a href="#" class="nav-link dropdown-toggle" id="phdish" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        PH Dish
+                      <a href="#" class="nav-link dropdown-toggle" id="recipe" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Recipe
                     </a>
-                    <ul class="dropdown-menu text-center bg-danger" aria-labelledby="phdish">
-                      <li><a href="#" class="dropdown-item">Pork</a></li>
-                      <li><a href="#" class="dropdown-item">Fish</a></li>
+                    <ul class="dropdown-menu text-center recipe" aria-labelledby="recipe">
+                      <li><a href="porkdish.html" class="dropdown-item">Pork</a></li>
+                      <li><a href="fishdish.html" class="dropdown-item">Fish</a></li>
                       <li><a href="chickendish.html" class="dropdown-item">Chicken</a></li>
-                      <li><a href="#" class="dropdown-item">Vegetables</a></li>
+                      <li><a href="vegetabledish.html" class="dropdown-item">Vegetables</a></li>
                     </ul>
                 </div>
                    </li>
 
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                   <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
                   </li>
 
                   <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="about.html">About</a>
                   </li>
                 </ul>
+
+                <form action="" class="d-flex">
+                  <input type="search" class="form-control me-2" placeholder="Search" name="search" id="search">
+                  <button class="btn btn-outline-warning" type="submit">Search</button>
+              </form>
               </div>
             </div>
           </nav>
@@ -60,20 +65,25 @@
     <article>
         <div style="background-color: rgb(255, 213, 135);">
             <div class="row m-auto">
-                <div class="col-6 p-5">
+                <div class="col-6 pt-4">
                     <img src="media/sarciadong_tilapia.jpg" alt="Sarciadong Tilapia" name="Sarciadong Tilapia" style=" border-radius: 20px; height: 480px;" class="dishmenu">
                 </div>
 
-                <div class="col-6 p-5 div_saverecipe">
-                        <img src="media/logo.png" alt="Logo" style="height: 200px;">
+                <div class="col-6 p-5 cookingtimeandprep">
+                        <img src="media/logo.png" alt="Logo" style="height: 200px;"  class="logo">
                         <h1 class="dishname">Sarciadong Tilapia</h1>
-                        <a href=""><b class="bi bi-bookmark-plus text-white btn btn-danger" style="font-size: 40px;"> Save Recipe</b></a>
+                        <i>
+                          <h4 class="text-center">This is a recipe for Sarciadong Tilapia</h4>
+                        </i>
+                        <h4>Prep: 10 minutes</h4>
+                        <h4>Cooking: 30 minutes</h4>
+                        <h4>Total: 40 minutes</h4>
                 </div>
             </div>
             <hr>
             <div class="row m-auto">
                     <div class="col-6">
-                        <h1>Ingredients</h1>
+                        <h1 class="fw-bolder">Ingredients</h1>
                         <ul class="ingredients">
                             <li>Tilapia (Fish) (cleaned)</li>
                             <li>4 cloves garlic</li>
@@ -87,7 +97,7 @@
                     </div>
 
                     <div class="col-6">
-                        <h1>How to Cook Sarciadong Tilapia</h1>
+                        <h1 class="fw-bolder">How to Cook Sarciadong Tilapia</h1>
                         <ul class="ingredients">
                             <li>Pan Fry the Tilapia. Set aside.</li>
                             <li>In a separate pan, saute garlic, onion and tomatoes.</li>
@@ -102,8 +112,8 @@
         </div>
     </article>
 
-    <footer class="bg-warning p-4">
-        <div class="text-center">
+    <footer class="p-3">
+        <div class="text-center mt-3 text-white">
             <h4>&copy; 2023 PH Best Recipes</h4>
         </div>
     </footer>
