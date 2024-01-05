@@ -194,9 +194,13 @@ a {
 }
 
 /* Similar Style */
-.carouselimage, .chickendish, .porkdish, .fishdish, .vegetabledish {
+.chickendish, .porkdish, .fishdish, .vegetabledish {
     border-radius: 20px;
     box-shadow: 0px 5px 10px black;
+}
+
+.carouselimage {
+    border-radius: 20px;
 }
 
 /* Background Color */
